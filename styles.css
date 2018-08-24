@@ -1,0 +1,47 @@
+body {
+  background-color: #4682B4;
+}
+
+.top-page-header-bar {
+  /*background-color: #191970;*/
+  /*height: 100px;*/
+  border-bottom: thick solid #B22222;
+}
+.main {
+  background-color: #fff;
+  /*height: 500px;*/
+}
+table {
+  border: thick solid #32a1ce;
+  align-self: center;
+}
+table td {
+  border: thin solid #32a1ce;
+  height: 7px;
+  width: 7px;
+}
+.alive {
+  background-color: #ff3300;
+}
+.actions {
+  padding: 20px 10px;
+}
+button {
+  width: 200px;
+}
+.welcome {
+  color: #fff;
+  padding: 30px 100px;
+}
+.gray {
+  background-color: #aaa;
+}
+.hidden {
+  display: none;
+}
+#board {
+  padding-top: 15px;
+}
+.lead {
+  font-weight: bolder;
+}

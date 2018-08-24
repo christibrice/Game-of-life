@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+		<title>Game of life</title>
+    </head>
+
+    <body>
+      <div class="container-fluid top-page-header-bar">
+        <div class="welcome">
+          <h2 class="display-4">Welcome to the Game of Life</h2>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row main">
+          <div class="col-sm-5" id="left">
+            <div class="jumbotron">
+              <h1 class="display-4">Rules</h1>
+              <hr class="my-4">
+              <p class="lead">For cells that are 'alive':</p>
+              <p>Each cell with one or no neighbors dies, as if by solitude.</p>
+              <p>Each cell with four or more neighbors dies, as if by overpopulation.</p>
+              <p>Each cell with two or three neighbors survives.</p>
+              <hr class="my-4">
+              <p class="lead">For cells that are not 'alive':</p>
+              <p>Each cell with exactly three neighbors becomes populated.</p>
+            </div>
+          </div>
+          <div class="col-sm-5" id="board">
+          </div>
+          <div class="col-sm-2 gray" id="right">
+            <div class="container">
+              <div class="row actions">
+                <button type="button" name="clear" id="clear" class="btn btn-primary" onclick="eventHandler.clear()">Clear</button>
+              </div>
+              <div class="row actions">
+                <button type="button" name="start" id="start" class="btn btn-success" onclick="eventHandler.start()">Start</button>
+              </div>
+              <div class="row actions">
+                <button type="button" name="stop" id="stop" class="btn btn-danger" onclick="eventHandler.stop()">Stop</button>
+              </div>
+              <div class="row actions">
+                <button type="button" name="step" id="step" class="btn btn-warning" onclick="eventHandler.step()">Step</button>
+              </div>
+              <div class="row actions">
+                <div class="hidden" id="running">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 200px;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Beeing running...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  		<!-- Including JavaScript Libraries -->
+  		<script src="assets/bootstrap/js/vendor/jquery-slim.min.js"></script>
+  		<script src="assets/bootstrap/js/vendor/popper.min.js"></script>
+  		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+  		<!-- Project JavaScript source code -->
+      <script type="text/javascript" src="life.js" ></script>
+    </body>
+</html>
